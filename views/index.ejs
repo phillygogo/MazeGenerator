@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Client Procrastination Analysis</title>
+	<title>Cool Name</title>
 	<link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
 	<script type="text/javascript" src="../public/javascripts/jscolor.js"></script>
@@ -13,42 +13,40 @@
 
 <body>
 	<div class="container">
-		<h1>Client Procrastination Analysis</h1>
-		<div class="row">
-			<div class="col-sm-3">
-				<h2>Player Color:</h2><input id="playercolor" class="jscolor" value="4286f4">
+		<h1>"Maze Generator"</h1>
+		<div class="gameSetupContainer">
+			<div class="column col-sm-4">
+				<div class="row">
+					<select id="difficulty" class="col-sm-11">
+						<option value="61">Kris</option>
+						<option value="42">Easy</option>
+						<option value="27" selected="selected">Medium</option>
+						<option value="17">Hard</option>
+						<option value="6">Insane</option>
+						<option value="2">Impossible</option>
+						<option value="43">Koga</option>
+					</select>
+				</div>
+				<div class="row">
+					<button id="mazeGenButton" class="col-sm-8">Create Maze</button>
+				</div>
 			</div>
-			<div class="col-sm-3">
-				<h2>Random Seed:</h2><input id="seed" class="num" value="">
+			<div class="column col-sm-2">
+				<div class="row">
+					<input id="playercolor" class="jscolor col-sm-12" value="4286f4">
+				</div>
+				<div class="row">
+					<input id="seed" class="num col-sm-8" value="" placeholder="Random Seed:">
+				</div>
 			</div>
-			<div class="col-sm-3">
-				<select id="difficulty">
-					<option value="63">Kris</option>
-					<option value="43">Easy</option>
-					<option value="27" selected="selected">Medium</option>
-					<option value="18">Hard</option>
-					<option value="9">Insane</option>
-					<option value="3">Impossible</option>
-					<option value="43">Koga</option>
-				</select>
-			</div>
-			<div class="col-sm-3">
-				<button id="mazeGenButton">Create Maze</button>
+			<div class="column col-sm-4">
+				<div class="row col-sm-12">
+						<h3>Game Time: <span id="gameTimeDisplay"></span></h3>
+				</div>
 			</div>
 		</div>
 		<br>
-		<br>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-				<h3>Game Time: <span id="gameTimeDisplay"></span></h3>
-			</div>
-			<div class="col-sm-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div id="canvascontainer"></div>
-			</div>
+		<div class="row" id="canvascontainer">
 		</div>
 		<div class="row">
 			<div class="col-sm-2">

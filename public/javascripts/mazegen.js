@@ -88,8 +88,10 @@ var drawMaze = function() {
     div = document.getElementById('canvascontainer');
     canvas = document.createElement('canvas');
     canvas.id = 'myCanvas';
-    canvas.width = 1000;
-    canvas.height = 1000;
+    canvas.width = 800;
+    canvas.height = 800;
+
+    console.log(canvas.width);
     div.appendChild(canvas);
     //remove event listeners
     window.removeEventListener('keydown', keysTrue, true);
